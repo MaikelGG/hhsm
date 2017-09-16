@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'Acme';
+  font-path: '../fonts/acme';
+  font-weight: normal;
+  font-style: normal;
+}
+
+$basefont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body {
+  color: $brown;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  font-family: $basefont;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+
+  @include MQ($tab){
+    padding-bottom: 48px;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Acme';
+	font-weight: 500;
+	line-height: 1.1;
+	transition: 0.3s;
+	margin: 1em 0 0.5em;
+
+	a {
+		font-weight: inherit;
+	}
+
+}
+
+// Header Styles
+
+h1, .h1 {
+	font-size: 2rem;
+	font-weight: 700;
+
+	@include MQ($desk) {
+		font-size: 3rem;
+	}
+
+}
+
+h2, .h2 {
+	font-size: 1.5rem;
+
+	@include MQ($desk) {
+		font-size: 2rem;
+	}
+}
+
+h3, .h3 {
+	font-size: 1.25rem;
+
+	@include MQ($desk) {
+		font-size: 1.5rem;
+	}
+}
+
+h4, .h4 {
+	font-size: 1.2rem;
+
+	@include MQ($desk) {
+		font-size: 1.25rem;
+	}
+
+}
+
+h5, .h5{
+	font-size: 1rem;
+
+	@include MQ($desk) {
+		font-size: 1rem;
+	}
+}
+
+h6, .h6 {
+	font-size: 0.875rem;;
+
+	@include MQ($desk) {
+		font-size: 0.875rem;
+	}
+}
+.section-title {
+  font-family: 'Acme';
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+
+a {
+  color: $brown;
+  text-decoration: none;
+  transition: all .3s ease-out;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    outline: 0;
+  }
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.35;
+
+  a {
+    text-decoration: underline;
+    color: $black;
+  }
+}
+
+.content-link {
+  font-family: 'Acme';
+  display: block;
+  line-height: 2;
+  text-decoration: underline;
+  font-size: 1.125em;
+}
+
+.section-page .list--benefits {
+  margin: 0 0 1.8em;
+  padding-left: 0;
+  line-height: 1.35;
+  list-style: none;
+
+  li {
+  	position: relative;
+  	padding-left: 1.8em;
+    margin-bottom: 0.5em;
+
+  	&:before {
+  		position: absolute;
+  		top: 9px;
+  		left: 8px;
+  		display: block;
+  		width: 11px;
+  		height: 3px;
+  		content: '';
+  		transform: rotate(-45deg);
+  		background-color: $green;
+  	}
+
+  	&:after {
+  		position: absolute;
+  		top: 11px;
+  		left: 5px;
+  		display: block;
+  		width: 7px;
+  		height: 3px;
+  		content: '';
+  		transform: rotate(45deg);
+  		background-color: $green;
+  	}
+
+  }
+
+}
+
+ul.default {
+  margin: 0 0 1.8em;
+  padding-left: 1.8em;
+  line-height: 1.35;
+  list-style-type: square;
+  list-style-position: outside;
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    text-decoration: underline;
+    color: $black;
+  }
+
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1.125em;
+  border-left: 4px solid $green;
+
+  p {
+    margin: 0;
+  }
+}

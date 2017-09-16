@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+
+  @include MQ($tab) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @include MQ($desk) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @include MQ($deskplus) {
+    width: 960px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+.main-content {
+  text-align: center;
+
+  @include MQ($tab) {
+    text-align: left;
+  }
+}
+
+.section-green {
+  background-color: $green;
+  color: white;
+  padding: 50px 0;
+}
+
+
+.quick-links {
+  margin: 20px 0 40px;
+}
+
+.img-center {
+  position: relative;
+  @include center(x);
+}
+
+.sidebysideimage {
+
+  img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  @include MQ($tab) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img {
+      flex: 0 0 47%;
+      max-width: 47%;
+    }
+
+    @include MQ($desk) {
+      img {
+
+        &:first-child {
+          flex: 0 0 50%;
+          max-width: 50%;
+          margin-left: -2rem;
+        }
+
+        &:last-child {
+          flex: 0 0 55%;
+          max-width: 57.5%;
+          margin-right: -4rem;
+        }
+
+      }
+    }
+
+  }
+}

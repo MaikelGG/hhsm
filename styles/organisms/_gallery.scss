@@ -1,0 +1,20 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+  @include MQ($desk) {
+    margin-left: -3rem;
+  }
+}
+
+.gallery__item {
+  display: block;
+  flex: 1 1 160px;
+  margin: 3px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,42 @@
+.page--basic {
+  @include MQ($tab) {
+    padding-bottom: 70px;
+  }
+}
+
+.section-page {
+  padding: 0 20px;
+
+  @include MQ($desk) {
+    max-width: $tab;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.page-nav {
+  padding-top: 60px;
+
+  @include MQ($desk) {
+    padding-top: 80px;
+  }
+
+}
+
+.vlaggen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vlag-left,
+.vlag-right {
+  height: 80px;
+
+  @include MQ($tab) {
+    height: 100px;
+
+  }
+
+}

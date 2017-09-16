@@ -1,0 +1,19 @@
+$background: #E3DBD2;
+$black: #333333;
+$green: #99A478;
+$sand: #F2E7D4;
+$brown: #453C3E;
+$blue: #516E8B;
+$blue-light: #CEDBEA;
+
+$tab: 45em; // 767px
+$desk: 60em; // 960px
+$deskplus: 64em; // 1024px
+$deskwide: 75em; // 1200px
+
+$mobile-only: 40em; // mobile only
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.8); }
+}

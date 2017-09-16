@@ -1,0 +1,112 @@
+.intro-header {
+  position: relative;
+  max-width: $tab;
+  margin: auto;
+
+  .content {
+    padding: 20px;
+    font-family: 'Acme';
+
+    .page--overview & {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+
+    .page--services & {
+      padding-top: 80px;
+      padding-bottom: 40px;
+
+      @include MQ($tab) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    @include MQ($tab) {
+      padding-top: 140px;
+    }
+  }
+
+  h1 {
+    font-size: 2em;
+    line-height: 1;
+    text-align: center;
+
+    @include MQ($desk) {
+      font-size: 3em;
+    }
+  }
+
+  .subtitle {
+    margin-top: 15px;
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+}
+
+.with-sidebar {
+  @include MQ($desk) {
+    position: relative;
+    max-width: $desk;
+    margin: auto;
+    @include clearfix;
+  }
+}
+
+.secondary-navigation {
+  position: relative;
+  max-width: $tab;
+  margin: auto;
+  margin-top: 80px;
+
+  .content {
+    padding: 20px;
+    font-family: 'Acme';
+  }
+
+  @include MQ($desk) {
+    float:left;
+    width: 25%;
+
+    .content {
+      padding: 60px 0;
+    }
+
+  }
+
+  .menu-label {
+    text-transform: uppercase;
+    font-family: 'Head';
+    font-size: 1.5em;
+    line-height: 34px;
+  }
+
+  li {
+    margin: 0.25em 0 0 0.9em;
+  }
+
+  a {
+    line-height: 1.5;
+    color: $brown;
+    display: block;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.content-with-left-sidebar {
+  @include MQ($desk) {
+    float: right;
+    width: 72%;
+  }
+}
+
+@include MQ($tab) {
+  .page-nav + .intro-header > .content {
+    padding-top: 20px;
+  }
+}

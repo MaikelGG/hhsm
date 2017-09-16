@@ -1,0 +1,92 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+// Images
+img.responsive-img,
+video.responsive-video {
+  width: 100%;
+  height: auto;
+}
+
+// Text Align
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right
+}
+
+.center, .center-align {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.margin-top-m {
+  margin-top: 12px;
+}
+
+fieldset.flat {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none ;
+}
+
+.hidden-mobile {
+  display: none !important;
+
+  @include MQ($tab) {
+    display: initial !important;
+  }
+
+}
+
+.only-desktop {
+  display: none !important;
+
+  @include MQ($desk) {
+    display: inherit !important;
+  }
+
+}
+
+.hidden-tablet {
+  @include MQ($tab) {
+    display: none;
+  }
+}
+
+.hidden-desktop {
+  @include MQ($desk){
+    display: none;
+  }
+}
+
+.gotcha,
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
