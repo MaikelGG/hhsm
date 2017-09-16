@@ -20,8 +20,8 @@
   </head>
   <body class="page--home">
   <div class="vlaggen">
-    <img src="blank.png" data-src="/images/original/vlag-sintmaarten.png" alt="Vlag Sint Maarten" class="vlag-left lazyload" />
     <img src="blank.png" data-src="/images/original/vlag-holten.jpg" alt="Vlag Holten" class="vlag-right lazyload" />
+    <img src="blank.png" data-src="/images/original/vlag-sintmaarten.png" alt="Vlag Sint Maarten" class="vlag-left lazyload" />
   </div>
     <div class="intro-header">
       <div class="content">
@@ -34,6 +34,22 @@
 <p>Familie, vrienden en bekenden blijven lang in onzekerheid, maar omstreeks 23.30 uur is dan toch het verlossende antwoord: <q>Wij zijn alle vier gezond en veilig</q>.</p><p>
 Mondjes maat komt er informatie binnen over de toestand van het gezin nadat de orkaan Irma haar verwoestende kracht heeft getoond. Via de app geeft Herbert de volgende update:</p>
 <blockquote><q> De verwachting is dat de stroom binnenkort weer beschikbaar is, maar dat water nog even gaat duren. Op dit moment worden iPad's en telefoons opgeladen via een aggregaat om contact te kunnen leggen met familie en vrienden. Bij ons eigen huis is de schade gelukkig beperkt gebleven, maar bij een groot deel van de huizen is de schade groot. We hebben nog genoeg eten en drinken voor een kleine week, maar moeten wel voorzichtig aan doen. Er schijnen binnenkort weer wat supermarkten open te gaan. Grootste probleem zijn nog steeds de plunderingen. Ik zag colonnes mensen met meubilair en de drankvoorraad een hotel uit komen.</q></blockquote>
+
+      <div id="gallery2" class="gallery">
+        <a href="/images/original/hhsm1.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm1.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm2.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm2.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm3.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm3.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm4.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm4.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm5.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm5.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm6.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm6.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm7.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm7.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm8.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm8.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm9.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm9.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm10.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm10.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm11.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm11.jpg" alt="Impressie" class="lazyload"></a>
+        <a href="/images/original/hhsm12.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/hhsm12.jpg" alt="Impressie" class="lazyload"></a>
+
+      </div>
 
 <p>Op de vraag of we als vrienden wat kunnen betekenen voor het gezin komt het antwoord dat we voor hen persoonlijk weinig kunnen doen. Wel wordt gevraagd vooral aan inzamelingsacties te geven. <q>Er gaat veel geld nodig zijn voor wederopbouw van het eiland</q>, zegt Herbert.</p>
 
@@ -52,7 +68,7 @@ Mondjes maat komt er informatie binnen over de toestand van het gezin nadat de o
         <a href="/images/original/IMG-20170913-WA0009.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/IMG-20170913-WA0009.jpg" alt="Impressie" class="lazyload"></a>
         <a href="/images/original/IMG-20170913-WA0010.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/IMG-20170913-WA0010.jpg" alt="Impressie" class="lazyload"></a>
         <a href="/images/original/IMG-20170913-WA0011.jpg" class="gallery__item"><img src="blank.png" data-src="/images/small/IMG-20170913-WA0011.jpg" alt="Impressie" class="lazyload"></a>
-        
+
       </div>
     <script src="/js/theme.js"></script>
     <link href="/css/blueimp-gallery.css" rel="stylesheet" type="text/css" media="screen">
@@ -64,6 +80,14 @@ Mondjes maat komt er informatie binnen over de toestand van het gezin nadat de o
             link = target.src ? target.parentNode : target,
             options = {index: link, event: event},
             links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+      };
+      document.getElementById('gallery2').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+          link = target.src ? target.parentNode : target,
+          options = {index: link, event: event},
+          links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
       };
 

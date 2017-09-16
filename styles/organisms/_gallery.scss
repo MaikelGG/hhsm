@@ -10,8 +10,12 @@
 
 .gallery__item {
   display: block;
-  flex: 1 1 160px;
+  flex: 1 1 48%;
   margin: 3px;
+
+  @include MQ($desk) {
+    flex-basis: 23%;
+  }
 
   img {
     display: block;
