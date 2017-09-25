@@ -25,7 +25,7 @@ input[type="submit"] {
   letter-spacing: .5px;
   height: 36px;
   line-height: 38px;
-  font-family: 'Acme';
+  font-family: 'Acme', sans-serif;
   padding: 0 2rem;
   text-transform: uppercase;
   min-width: 80%;
@@ -37,7 +37,7 @@ input[type="submit"] {
   }
 
   &:hover {
-    background-color: lighten($brown, 5%);
+    background-color: lighten($green, 5%);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
   }
 }
