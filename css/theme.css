@@ -285,7 +285,11 @@ input[type="submit"] {
   background-color: #7d9c00; }
 
 .button-download {
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%; }
   .button-download svg {
     width: 20px;
     height: 36px;

@@ -61,6 +61,10 @@ input[type="submit"] {
 
 .button-download{
   padding-left: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 
   svg {
     width: 20px;
