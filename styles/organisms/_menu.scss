@@ -6,7 +6,7 @@
   height: 100%;
   z-index: 11;
   overflow: hidden;
-  background-color: rgba($brown, 0.9);
+  background-color: rgba($blue, 0.9);
   transform: translateX(100%);
   transform-origin: right center;
   transition: transform 1s cubic-bezier(.87,-.41,.19,1.44);
@@ -17,7 +17,7 @@
   @include MQ($desk) {
     transform: translateX(0);
     height: auto;
-    background-color: $green;
+    background-color: transparent;
     position: absolute;
   }
 }
@@ -67,12 +67,12 @@
 .menu-link {
   text-decoration: none;
   display: block;
-  font-family: 'Acme';
+  font-family: 'Acme', sans-serif;
   padding-left: 50px;
   font-size: 1.25em;
   line-height: 2;
   transition: 0.1s;
-  color: $background;
+  color: white;
 
   &:hover {
     background-color: rgba(0,0,0,0.1);
@@ -86,7 +86,7 @@
   @include MQ($desk) {
     padding: 5px 10px;
     font-size: 1.1em;
-    color: white;
+    color: $blue;
 
     &:hover {
       background-color: rgba(255,255,255,0.1);
