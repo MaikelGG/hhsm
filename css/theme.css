@@ -504,13 +504,12 @@ input[type="submit"] {
     .page--overview .intro-header .content {
       padding-top: 80px;
       padding-bottom: 40px; }
-    .page--services .intro-header .content {
-      padding-top: 80px;
-      padding-bottom: 40px; }
   .intro-header h1 {
     font-size: 2em;
     line-height: 1;
     text-align: center; }
+    .intro-header h1 small {
+      font-size: 0.6em; }
   .intro-header .subtitle {
     margin-top: 15px;
     font-size: 1.1em;
@@ -555,7 +554,15 @@ input[type="submit"] {
 
 .vlag-left,
 .vlag-right {
-  height: 80px; }
+  height: 80px;
+  opacity: 0.65; }
+  .vlag-left:hover,
+  .vlag-right:hover {
+    opacity: 1; }
+
+.logo {
+  margin-top: -10px;
+  height: 100px; }
 
 @media screen and (min-width: 45em) {
     .hidden-mobile {
@@ -591,18 +598,17 @@ input[type="submit"] {
         padding-right: 5%; }
       .header.is-fixed {
         padding: 12px 0; }
-        .page--services .intro-header .content {
-          padding-left: 0;
-          padding-right: 0; }
       .intro-header .content {
-        padding-top: 80px; }
+        padding-top: 0; }
   .page-nav + .intro-header > .content {
     padding-top: 20px; }
   .page--basic {
     padding-bottom: 70px; }
     .vlag-left,
     .vlag-right {
-      height: 100px; } }
+      height: 100px; }
+    .logo {
+      height: 150px; } }
 
 @media screen and (min-width: 60em) {
     .only-desktop {

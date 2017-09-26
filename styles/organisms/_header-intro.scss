@@ -12,18 +12,8 @@
       padding-bottom: 40px;
     }
 
-    .page--services & {
-      padding-top: 80px;
-      padding-bottom: 40px;
-
-      @include MQ($tab) {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-
     @include MQ($tab) {
-      padding-top: 80px;
+      padding-top: 0;
     }
   }
 
@@ -34,6 +24,10 @@
 
     @include MQ($desk) {
       font-size: 3em;
+    }
+
+    small {
+      font-size: 0.6em;
     }
   }
 

@@ -34,10 +34,23 @@
 .vlag-left,
 .vlag-right {
   height: 80px;
+  opacity: 0.65;
+
+  &:hover {
+    opacity: 1;
+  }
 
   @include MQ($tab) {
     height: 100px;
-
   }
 
+}
+
+.logo {
+  margin-top: -10px;
+  height: 100px;
+
+  @include MQ($tab) {
+    height: 150px;
+  }
 }
