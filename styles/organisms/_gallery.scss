@@ -14,7 +14,8 @@
   margin: 3px;
 
   @include MQ($desk) {
-    flex-basis: 23%;
+    flex-basis: 24%;
+    flex-grow: 0;
   }
 
   img {

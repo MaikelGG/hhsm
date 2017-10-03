@@ -664,8 +664,11 @@ input[type="submit"] {
     .gallery {
       margin-left: -3rem; }
     .gallery__item {
-      -ms-flex-preferred-size: 23%;
-          flex-basis: 23%; }
+      -ms-flex-preferred-size: 24%;
+          flex-basis: 24%;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0; }
       .intro-header h1 {
         font-size: 3em; }
   .with-sidebar {
